@@ -1,0 +1,18 @@
+{
+  "entryFile": "src/index.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "spec": {
+    "securityDefinitions": {
+      "api_key": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
+      }
+    },
+    "outputDirectory": "public",
+    "specVersion": 3
+  },
+  "routes": {
+    "authenticationModule": "./src/services/Auth/index.ts"
+  }
+}
